@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="images/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
@@ -17,6 +17,7 @@
     .attribution {
       font-size: 11px;
       text-align: center;
+      padding-top: 10px;
     }
 
     .attribution a {
@@ -24,52 +25,57 @@
     }
 
     body {
-      margin: 0px auto 0px auto;
+      margin: 0px auto;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
       background-color: hsl(212, 45%, 89%);
       font-family: 'Outfit', sans-serif;
-      text-align: center;
+
     }
 
     h1 {
-      font-size: 21px;
+      font-size: 1.5625rem;
       font-family: 'Outfit', sans-serif;
       color: hsl(218, 44%, 22%);
+      text-align: center;
+      font-weight: 700;
     }
 
     p {
-      font-size: 16px;
+      font-size: 0.9375rem;
       font-family: 'Outfit', sans-serif;
       font-weight: 400;
       color: hsl(220, 15%, 55%);
+      padding: 0px 30px;
+
     }
+
+
 
     .container {
-      margin: 100px auto 10px auto;
-      text-align: center;
       font-family: 'Outfit', sans-serif;
-      max-width: 320px;
-      height: 497px;
+
       background-color: hsl(0, 0%, 100%);
-      border-radius: 15px;
+      border-radius: 0.9375rem;
+      padding: 1rem;
+      max-width: 350px;
 
     }
+
     .img-code {
-      margin-top: 13px;
+
       border-radius: 15px;
+      width: 100%;
+      padding-top: 5px;
 
     }
+
     .text {
-      padding: 0px 26px;
+      margin: 20px;
+      text-align: center;
     }
-    @media screen and (max-width:750px) {
-      body{
-        width: 375px;
-
-      }
-      .container{
-        margin-top: 80px;
-      }
-    }
+    
   </style>
 </head>
 
@@ -77,24 +83,25 @@
 
   <main>
     <div class="container">
-      <img class="img-code" src="https://i.ibb.co/q9xGCpn/image-qr-code.png" alt="" width="290">
+      <img class="img-code" src="https://i.ibb.co/q9xGCpn/image-qr-code.png" alt="">
       <div class="text">
         <h1>Improve your front-end skills by building projects</h1>
         <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
       </div>
     </div>
-  </main>
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://www.frontendmentor.io/profile/moistmike101">Michael</a>.
+      </div>
+    </footer>
 
-  <footer>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="https://www.frontendmentor.io/profile/moistmike101">Michael</a>.
-    </div>
-  </footer>
+  </main>
 
 </body>
 <!-- Hosted Images
   <a href="https://imgbb.com/"><img src="https://i.ibb.co/nbfXktf/favicon-32x32.png" alt="favicon-32x32" border="0"></a>
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/q9xGCpn/image-qr-code.png" alt="image-qr-code" border="0"></a>
 -->
+
 </html>
